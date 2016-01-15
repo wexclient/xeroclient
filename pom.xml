@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.livngroup</groupId>
-	<artifactId>zeroclient</artifactId>
+	<artifactId>xeroclient</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>ZeroClient</name>
-	<description>Zero Interface Demo on Spring Boot</description>
+	<name>XeroClient</name>
+	<description>XERO Interface Demo on Spring Boot</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -23,6 +23,7 @@
 		<java.version>1.8</java.version>
     	<axis2-version>1.6.3</axis2-version>
 
+		<xero-connectifier.version>0.13</xero-connectifier.version>
   		<slf4j.version>1.7.13</slf4j.version>
   		<logback.version>1.1.3</logback.version>
 
@@ -32,6 +33,12 @@
 	</properties>
 
 	<dependencies>
+		
+		<dependency>
+			<groupId>com.connectifier.xero</groupId>
+			<artifactId>client</artifactId>
+			<version>${xero-connectifier.version}</version>
+		</dependency>
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -71,10 +78,10 @@
 		    <scope>runtime</scope>
 		</dependency>		
 
-        <dependency>
+        <!--dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>		
+        </dependency-->		
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

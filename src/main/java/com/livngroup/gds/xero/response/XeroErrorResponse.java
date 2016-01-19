@@ -12,7 +12,7 @@ public class XeroErrorResponse implements IXeroResponce {
 	public XeroErrorResponse() {
 		this.message = FAILURE;
 		this.status = HttpStatus.I_AM_A_TEAPOT;
-		this.code = HttpStatus.I_AM_A_TEAPOT + "0000";
+		this.code = HttpStatus.I_AM_A_TEAPOT + "-0000";
 	}
 	
 	public XeroErrorResponse(HttpStatus status, String code, String description) {
@@ -20,6 +20,10 @@ public class XeroErrorResponse implements IXeroResponce {
 		this.status = status;
 		this.code = code;
 		this.description = description;
+	}
+
+	public XeroErrorResponse(HttpStatus status, String description) {
+		this(status, status.value() + "-0000", description);
 	}
 
 	@Override

@@ -16,6 +16,7 @@ import com.livngroup.gds.xero.exception.XeroException;
 import com.livngroup.gds.xero.exception.XeroRuntimeException;
 import com.livngroup.gds.xero.response.XeroErrorResponse;
 
+
 public abstract class XeroController {
 
 	final protected Logger logger = LoggerFactory.getLogger(this.getClass());
@@ -59,7 +60,7 @@ public abstract class XeroController {
 		logger.error("Exception cought: " + exception.getMessage(), exception);
 		HttpStatus status = HttpStatus.valueOf(exception.getResponseCode());
 	    return new ResponseEntity<XeroErrorResponse>(
-	    		new XeroErrorResponse(status, status + "-0000", exception.getMessage()), status);
+	    		new XeroErrorResponse(status, exception.getMessage()), status);
 	}
 
 }

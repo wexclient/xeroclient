@@ -1,0 +1,16 @@
+
+       -oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo:                 
+      `+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.                
+      :oooooo::ooooooooooo/:oooo+/::::/+oooooo://::/ooo+/::::/+oooooooooo/                
+      oooooo+- `:ooooooo/` .+o:. `.--.` ./ooo:  `..:o/. `....` .:ooooooooo`               
+     .oooooooo+. `:ooo/` ./o+. ./oooooo/` -oo: `+ooo- `/oooooo/. .oooooooo-               
+     -oooooooooo+. `:. ./ooo- `//////////` :o: .ooo: `ooo+::+ooo. -ooooooo:               
+     -oooooooooooo-   -ooooo`  ```````````./o: .ooo. -ooo`  `ooo: `ooooooo:               
+     -oooooooooo/. .:. `/ooo- .ooooooooo++ooo: .ooo: `+oo+::+ooo. -ooooooo:               
+     .oooooooo/. ./ooo/. `/oo. ./ooooo+:` /oo: .oooo- `:+oooo+:` .oooooooo-               
+      oooooo+. ./ooooooo/. .+o/.```..` `./ooo: .ooooo/.` `..` `./ooooooooo`               
+      :oooooo//ooooooooooo//oooo+/:::/+ooooooo/+oooooooo+/:::/+oooooooooo/                
+      `+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo.                
+       -oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo:                 
+
+${application.title} (${application.formatted-version}) :: Powered by ${AnsiColor.GREEN}Spring Boot${AnsiColor.DEFAULT}${spring-boot.formatted-version}

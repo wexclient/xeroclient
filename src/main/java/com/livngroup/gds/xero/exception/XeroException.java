@@ -8,7 +8,7 @@ public interface XeroException {
 
 	public String MESSAGE_DEFAULT = "Default error";
 	
-	public String MESSAGE_REMOTE_CALL_ERROR = "WEX has RMI exception. It could be caused by Server side and network";
+	public String MESSAGE_REMOTE_CALL_ERROR = "XERO has RMI exception. It could be caused by Server side and network";
 	public String MESSAGE_INVALID_CREDENTIALS = "Invalid credentials";
 	
  	public XeroErrorResponse getErrorResponse();

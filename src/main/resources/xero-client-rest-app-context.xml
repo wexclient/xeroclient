@@ -7,10 +7,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
- 	<beans:import resource="classpath:persistence-context.xml" />
-
 	<context:annotation-config />
-   	<context:component-scan base-package="com.livngroup.gds.xero" />
 
 	<beans:bean id="xeroClient" class="com.connectifier.xeroclient.XeroClient">
 		<beans:constructor-arg ref="pemReader" />

@@ -16,6 +16,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configurers.GlobalAuthenticationConfigurerAdapter;
@@ -39,6 +40,7 @@ import com.livngroup.gds.xero.repositories.LivnAccountRepository;
 @SpringBootApplication
 @ImportResource(locations = "classpath:xero-client-rest-app-context.xml")
 @ComponentScan(basePackages = "com.livngroup.gds.xero")
+@EnableJpaRepositories("com.livngroup.gds.xero.repositories")
 //@EnableScheduling
 @PropertySource("classpath:application-properties.xml")
 public class ServerApp {
